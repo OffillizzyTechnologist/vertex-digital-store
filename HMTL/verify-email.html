@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verificação de Email | VERTEX</title>
+
+<link rel="stylesheet" href="../CSS/verify-email.css">
+</head>
+
+<body>
+
+    <main class="verification-container">
+
+        <section class="verification-card">
+
+           <div class="vertex-logo">
+    <img src="../IMG/logo-vertex.png" alt="Logótipo VERTEX">
+</div>
+
+            <h1>Introduz o código de verificação</h1>
+
+            <p class="description">
+                Enviámos um código de verificação para:
+            </p>
+
+            <p class="user-email" id="userEmail">
+                A carregar email...
+            </p>
+
+            <form id="verificationForm">
+
+                <div class="code-inputs">
+
+                    <input type="text" maxlength="1" inputmode="numeric" autocomplete="one-time-code" class="code-input" aria-label="Primeiro dígito">
+                    <input type="text" maxlength="1" inputmode="numeric" class="code-input" aria-label="Segundo dígito">
+                    <input type="text" maxlength="1" inputmode="numeric" class="code-input" aria-label="Terceiro dígito">
+                    <input type="text" maxlength="1" inputmode="numeric" class="code-input" aria-label="Quarto dígito">
+                    <input type="text" maxlength="1" inputmode="numeric" class="code-input" aria-label="Quinto dígito">
+                    <input type="text" maxlength="1" inputmode="numeric" class="code-input" aria-label="Sexto dígito">
+
+                </div>
+
+                <div class="resend-area">
+
+                    <span>Não recebeste o código?</span>
+
+                    <button type="button" id="resendCode">
+                        Reenviar código
+                    </button>
+
+                </div>
+
+                <div id="authMessage" class="auth-message"></div>
+
+                <div class="button-area">
+
+                    <button type="button" id="cancelButton" class="cancel-button">
+                        Cancelar
+                    </button>
+
+                    <button type="submit" id="verifyButton" class="verify-button">
+                        Verificar
+                    </button>
+
+                </div>
+
+            </form>
+
+            <p class="footer-text">
+                © 2026 VERTEX DIGITAL STORE
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="JS/supabase.js"></script>
+    <script src="JS/verify-email.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VERTEX TECHNOLOGIES - Loja internacional de produtos digitais, ebooks, manuais e templates.">
+    <title>VERTEX TECHNOLOGIES | Digital Store</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="zmain.js" defer></script>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header class="header">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                VERTEX<span>TECHNOLOGIES</span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#inicio">Início</a>
+                <a href="#categorias">Categorias</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre nós</a>
+
+                <!-- BOTÃO DO CARRINHO -->
+                <button class="cart-button" id="open-cart">
+                    Carrinho <span id="cart-count">0</span>
+                </button>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- CARRINHO DE COMPRAS -->
+    <div class="cart-overlay" id="cart-overlay">
+
+        <div class="cart-panel">
+
+            <div class="cart-header">
+                <h2>O teu carrinho</h2>
+
+                <button id="close-cart" class="close-cart" aria-label="Fechar carrinho">
+                    &times;
+                </button>
+            </div>
+
+            <!-- PRODUTOS ADICIONADOS -->
+            <div id="cart-items" class="cart-items">
+            </div>
+
+            <!-- TOTAL E PAGAMENTO -->
+            <div class="cart-footer">
+
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <strong id="cart-total">$0.00</strong>
+                </div>
+
+                <button id="checkout-button" class="checkout-button">
+                    Continuar para pagamento
+                </button>
+
+                <button id="clear-cart" class="clear-cart">
+                    Esvaziar carrinho
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+        <!-- SECÇÃO INICIAL -->
+        <section class="hero" id="inicio">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="hero-label">
+                        DIGITAL PRODUCTS STORE
+                    </span>
+
+                    <h1>
+                        Knowledge.
+                        <span>Innovation.</span>
+                        Growth.
+                    </h1>
+
+                    <p>
+                        Descobre produtos digitais que ajudam a desenvolver
+                        conhecimentos, melhorar competências e transformar ideias
+                        em resultados.
+                    </p>
+
+                    <a href="#produtos" class="primary-button">
+                        Explorar produtos
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categories section" id="categorias">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>EXPLORA A NOSSA LOJA</span>
+                    <h2>Categorias</h2>
+                    <p>
+                        Encontra recursos digitais para diferentes necessidades.
+                    </p>
+                </div>
+
+                <div class="category-grid">
+
+                    <div class="category-card">
+                        <div class="category-icon">📚</div>
+                        <h3>Ebooks</h3>
+                        <p>Livros digitais e materiais educativos.</p>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">📘</div>
+                        <h3>Manuais</h3>
+                        <p>Guias práticos para aprender novas competências.</p>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">📂</div>
+                        <h3>Templates</h3>
+                        <p>Modelos digitais para facilitar o teu trabalho.</p>
+                    </div>
+
+                    <div class="category-card">
+                        <div class="category-icon">🎓</div>
+                        <h3>Cursos</h3>
+                        <p>Conteúdos para aprendizagem e desenvolvimento.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRODUTOS -->
+        <section class="products section" id="produtos">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>A NOSSA SELECÇÃO</span>
+                    <h2>Produtos em destaque</h2>
+                    <p>
+                        Recursos digitais seleccionados para apoiar o teu crescimento.
+                    </p>
+                </div>
+
+                <!-- OS PRODUTOS SERÃO CARREGADOS PELO JAVASCRIPT -->
+                <div class="product-grid" id="product-grid">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SOBRE -->
+        <section class="about section" id="sobre">
+
+            <div class="container about-content">
+
+                <div class="about-text">
+
+                    <span>QUEM SOMOS</span>
+
+                    <h2>
+                        Tecnologia e conhecimento para um futuro melhor.
+                    </h2>
+
+                    <p>
+                        A VERTEX TECHNOLOGIES é uma marca dedicada à criação
+                        e comercialização de produtos digitais, recursos
+                        educativos e ferramentas de produtividade.
+                    </p>
+
+                    <p>
+                        A nossa missão é tornar o conhecimento mais acessível,
+                        através de soluções digitais úteis e inovadoras.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+                <h2>VERTEX TECHNOLOGIES</h2>
+                <p>Knowledge. Innovation. Growth.</p>
+            </div>
+
+            <div class="footer-copy">
+                <p>
+                    &copy; 2026 VERTEX TECHNOLOGIES.
+                    Todos os direitos reservados.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

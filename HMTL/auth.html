@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Sign in or create your Vertex Digital Store account.">
+
+    <title>Account Access | VERTEX</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="../CSS/auth.css">
+
+</head>
+
+<body>
+
+    <main class="auth-wrapper">
+
+        <div class="auth-card" id="authCard">
+
+            <!-- LEFT WELCOME PANEL -->
+
+            <section class="welcome-panel">
+
+                <a href="index.html" class="brand">
+                    VERTEX<span>.</span>
+                </a>
+
+                <div class="welcome-content">
+
+                    <div class="welcome-icon">✦</div>
+
+                    <h1 id="welcomeTitle">WELCOME BACK</h1>
+
+                    <p id="welcomeDescription">
+                        Your digital journey starts here.
+                        Sign in to access your account and discover
+                        a world of knowledge.
+                    </p>
+
+                    <div class="welcome-decoration">
+                        <span class="circle circle-one"></span>
+                        <span class="circle circle-two"></span>
+                        <span class="circle circle-three"></span>
+                    </div>
+
+                </div>
+
+                <div class="welcome-footer">
+                    YOUR DIGITAL WORLD.
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT FORM PANEL -->
+
+            <section class="form-panel">
+
+                <!-- LOGIN FORM -->
+
+                <div class="form-content active" id="loginForm">
+
+                    <div class="form-heading">
+                        <span class="eyebrow">WELCOME TO VERTEX</span>
+                        <h2>Sign in</h2>
+                        <p>Enter your account details to continue.</p>
+                    </div>
+
+                    <form id="signInForm">
+
+                        <div class="input-group">
+                            <label for="loginEmail">Email address</label>
+
+                            <div class="input-box">
+                                <span class="input-icon">✉</span>
+
+                                <input
+                                    type="email"
+                                    id="loginEmail"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+
+                            <label for="loginPassword">Password</label>
+
+                            <div class="input-box">
+                                <span class="input-icon">♙</span>
+
+                                <input
+                                    type="password"
+                                    id="loginPassword"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="loginPassword"
+                                    aria-label="Show password"
+                                >
+                                    SHOW
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div class="form-options">
+
+                            <label class="remember-option">
+                                <input type="checkbox" id="rememberMe">
+                                <span>Remember me</span>
+                            </label>
+
+                            <a href="#" id="forgotPassword">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+                        <button type="submit" class="submit-button">
+                            Sign in
+                            <span>→</span>
+                        </button>
+
+                    </form>
+
+
+                    <div class="separator">
+                        <span></span>
+                        <p>Or continue with</p>
+                        <span></span>
+                    </div>
+
+
+                    <!-- SOCIAL LOGIN -->
+
+                    <div class="social-buttons">
+
+                        <button type="button" class="social-button" data-provider="Google">
+
+                            <svg viewBox="0 0 48 48" aria-hidden="true">
+                                <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" transform="translate(3 5) scale(.875)"/>
+                                <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.76 7.18l7.73 6C44.42 38.03 46.98 31.89 46.98 24.55z"/>
+                                <path fill="#FBBC05" d="M10.53 28.59A14.4 14.4 0 0 1 9.75 24c0-1.59.27-3.13.76-4.59l-7.98-6.19A23.85 23.85 0 0 0 0 24c0 3.87.93 7.52 2.56 10.78l7.97-6.19z" transform="translate(3 5) scale(.875)"/>
+                                <path fill="#34A853" d="M24 48c6.48 0 11.94-2.13 15.91-5.8l-7.73-6c-2.14 1.45-4.89 2.3-8.18 2.3-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" transform="translate(3 5) scale(.875)"/>
+                            </svg>
+
+                            <span>Google</span>
+                        </button>
+
+
+                        <button type="button" class="social-button" data-provider="Facebook">
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="#1877F2" d="M24 12a12 12 0 1 0-13.875 11.85v-8.38H7.08V12h3.045V9.36c0-3.005 1.79-4.665 4.53-4.665 1.312 0 2.686.234 2.686.234v2.953h-1.513c-1.49 0-1.954.925-1.954 1.874V12h3.324l-.532 3.47h-2.792v8.38A12 12 0 0 0 24 12"/>
+                            </svg>
+
+                            <span>Facebook</span>
+                        </button>
+
+
+                        <button type="button" class="social-button" data-provider="GitHub">
+
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill="currentColor" d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.5-1.3-1.24-1.65-1.24-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 .1.77 2.1 3.47 1.54.1-.73.39-1.23.7-1.52-2.5-.28-5.14-1.25-5.14-5.55 0-1.23.44-2.23 1.16-3.02-.12-.29-.5-1.43.11-2.98 0 0 .95-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.62 1.55.23 2.69.12 2.98.72.79 1.15 1.79 1.15 3.02 0 4.31-2.65 5.27-5.17 5.55.41.36.77 1.04.77 2.1v3.49c0 .3.2.65.78.54A11.2 11.2 0 0 0 12 .8z"/>
+                            </svg>
+
+                            <span>GitHub</span>
+                        </button>
+
+                    </div>
+
+
+                    <p class="switch-text">
+                        Don't have an account?
+                        <button type="button" id="showSignup">
+                            Sign up
+                        </button>
+                    </p>
+
+                </div>
+
+
+                <!-- SIGNUP FORM -->
+
+                <div class="form-content" id="signupForm">
+
+                    <div class="form-heading">
+                        <span class="eyebrow">JOIN THE COMMUNITY</span>
+                        <h2>Create account</h2>
+                        <p>Create your account and start exploring.</p>
+                    </div>
+
+                    <form id="createAccountForm">
+
+                        <div class="input-group">
+                            <label for="fullName">Full name</label>
+
+                            <div class="input-box">
+                                <span class="input-icon">♙</span>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    placeholder="Your full name"
+                                    autocomplete="name"
+                                    minlength="2"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+
+                        <div class="input-group">
+                            <label for="signupEmail">Email address</label>
+
+                            <div class="input-box">
+                                <span class="input-icon">✉</span>
+
+                                <input
+                                    type="email"
+                                    id="signupEmail"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+
+                        <div class="input-group">
+                            <label for="signupPassword">Password</label>
+
+                            <div class="input-box">
+                                <span class="input-icon">♙</span>
+
+                                <input
+                                    type="password"
+                                    id="signupPassword"
+                                    placeholder="At least 8 characters"
+                                    autocomplete="new-password"
+                                    minlength="8"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    data-target="signupPassword"
+                                    aria-label="Show password"
+                                >
+                                    SHOW
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="input-group">
+                            <label for="confirmPassword">Confirm password</label>
+
+                            <div class="input-box">
+                                <span class="input-icon">♙</span>
+
+                                <input
+                                    type="password"
+                                    id="confirmPassword"
+                                    placeholder="Repeat your password"
+                                    autocomplete="new-password"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+
+                        <label class="terms-option">
+                            <input type="checkbox" id="acceptTerms" required>
+
+                            <span>
+                                I agree to the
+                                <a href="#">Terms of Service</a>
+                                and
+                                <a href="#">Privacy Policy</a>.
+                            </span>
+                        </label>
+
+
+                        <button type="submit" class="submit-button">
+                            Create account
+                            <span>→</span>
+                        </button>
+
+                    </form>
+
+
+                    <p class="switch-text">
+                        Already have an account?
+                        <button type="button" id="showLogin">
+                            Sign in
+                        </button>
+                    </p>
+
+                </div>
+
+                <div id="authMessage" class="auth-message" role="status" aria-live="polite"></div>
+
+            </section>
+
+        </div>
+
+        <a href="index.html" class="back-home">
+            ← Back to store
+        </a>
+
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="../JS/supabase.js"></script>
+<script src="../JS/auth.js"></script>
+
+</body>
+</html>
